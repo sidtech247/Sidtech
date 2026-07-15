@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>SidTech School</title>
+</head>
+<body>
+  <iframe 
+    src="https://script.google.com/macros/s/AKfycbz4Y9ud3Ae7Ps84xd4WsigMdjrcRfNK2G7EV-dFTGbqRQJUNXYMfwO2nhhMNNdYJNi1Pw/exec"
+    width="100%"
+    height="100%"
+    allowfullscreen="true"
+    style="position: fixed; top: 0; left: 0; width: 100%; height: 100%; border: none;">
+  </iframe>
+
+  <script>
+    window.onload = function() {
+      document.querySelector('iframe')
+        .requestFullscreen()
+        .catch((err) => {
+          console.error('Error attempting to enable full-screen mode:', err.message);
+        });
+    };
+  </script>
+</body>
+</html>
